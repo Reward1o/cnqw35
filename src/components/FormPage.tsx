@@ -11,7 +11,6 @@ const FormPage: React.FC = () => {
    const [formElements, setFormElements] = useState<React.ReactNode[]>([]);
 
    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      e.preventDefault();
       const {name, value} = e.target;
       setCounts((prev) => ({...prev, [name]: Number(value)}));
    };
